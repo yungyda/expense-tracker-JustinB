@@ -1,0 +1,22 @@
+/* Styles for the Add Expense Button */
+.add-expense-btn {
+  background-color: #00b894; /* Bright green background */
+  color: white; /* White text */
+  font-size: 1rem; /* Larger text */
+  font-weight: bold; /* Bold text */
+  padding: 10px 20px; /* Padding for better click area */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.add-expense-btn:hover {
+  background-color: #6c5ce7; /* Change background to purple on hover */
+  transform: scale(1.05); /* Slightly increase button size */
+}
+
+.add-expense-btn:focus {
+  outline: none; /* Remove the focus outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on focus */
+}

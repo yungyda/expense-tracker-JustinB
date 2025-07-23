@@ -1,0 +1,126 @@
+/* Styling for overall page structure */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.penny-image {
+  width: 50%; /* Makes the image half the size */
+  height: auto; /* Maintains the aspect ratio */
+}
+.about-section {
+  text-align: center; /* Center-aligns text and image */
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for better contrast */
+  border-radius: 10px; /* Rounded corners for the section */
+  max-width: 600px; /* Limiting width of content */
+  margin: 20px auto; /* Centers the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.about-title {
+  font-size: 2rem; /* Larger font size for title */
+  color: #2c3e50; /* Dark color for contrast */
+  margin-bottom: 10px; /* Space between title and text */
+}
+
+.about-text {
+  font-size: 1.2rem; /* Makes text a bit larger for readability */
+  color: #34495e; /* Slightly lighter color for the text */
+  line-height: 1.6; /* Increases line height for readability */
+  margin-bottom: 20px; /* Adds space below the text */
+}
+
+.penny-image {
+  width: 100px; /* Resize the penny image */
+  height: auto;
+  margin-top: 20px; /* Space between image and text */
+  border-radius: 50%; /* Makes the image circular */
+  border: 3px solid #2c3e50; /* Adds a border to the image */
+  padding: 5px; /* Adds space inside the border */
+}
+.category-chart {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f9f9f9; /* Light background for the chart */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.chart-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.category-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  margin: 0.4rem 0;
+  background: #ffffff; /* White background for each item */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for each list item */
+}
+
+.category-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.category-amount {
+  font-weight: 700;
+  color: #27ae60; /* Green color for positive amounts */
+}
+
+/* Add some styles for overspending (highlight in red) */
+.category-item.overspend .category-amount {
+  color: #e74c3c; /* Red color for overspending */
+}
