@@ -3,7 +3,7 @@ import About from "./components/About"; // Correct import from the components fo
 import Header from "./components/Header"; // Header component for navigation
 import Footer from "./components/Footer"; // Footer component with links
 import Home from "./components/Home"; // Home page component
-import "./app.css"; // External stylesheet for styling
+import "./App.css"; // External stylesheet for styling
 
 function App() {
   return (
