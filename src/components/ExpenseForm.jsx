@@ -33,6 +33,7 @@ function ExpenseForm({ onAddExpense }) {
     <form onSubmit={handleSubmit} className="expense-form">
       {/* Input for entering the amount of the expense */}
       <input
+        min="0" 
         type="number"
         name="amount"
         placeholder="Amount"

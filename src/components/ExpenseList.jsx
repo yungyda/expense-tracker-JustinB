@@ -6,16 +6,30 @@ function ExpenseList({ expenses }) {
   const sortedExpenses = expenses.sort((a, b) => b.amount - a.amount);
 
   return (
-    <div className="expense-list">
-      <h2>Expense List</h2>
-      {sortedExpenses.map((expense) => (
-        <div key={expense.id} className="expense-item">
-          <p>{expense.category}: ${expense.amount}</p>
-          <p>{expense.description}</p>
-          {expense.amount > 100 && <p className="overspent">⚠️ Overspending!</p>}
-        </div>
-      ))}
-    </div>
+ 
+   
+         <table className="expense-table"> 
+        <tr>
+          <th>
+            Category
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Amount
+          </th>
+        </tr>
+        {sortedExpenses.map((expense) => (
+          <tr key={expense.id} >
+            <td>{expense.category}</td>
+            <td>{expense.description}</td>
+            <td>{expense.amount}{expense.amount >100 && <span className="overspent">⚠️ Overspending!</span>}</td>
+          </tr>
+        ))}
+       
+      </table>
+     
   );
 }
 

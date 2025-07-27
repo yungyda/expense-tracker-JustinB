@@ -1,4 +1,5 @@
 import React from "react";
+import MyChart from "./MyChart";
 
 // Placeholder chart component for now
 function CategoryChart({ expenses }) {
@@ -11,6 +12,7 @@ function CategoryChart({ expenses }) {
     return { category, total };
   });
 
+
   return (
     <div className="category-chart">
       <h2 className="chart-title">Category Spending Breakdown</h2>
@@ -22,7 +24,12 @@ function CategoryChart({ expenses }) {
           </li>
         ))}
       </ul>
+ 
+      <MyChart categoryTotals={ categoryTotals}/>
+    
+     
     </div>
+  
   );
 }
 
