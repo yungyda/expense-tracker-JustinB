@@ -91,6 +91,15 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.filter-text-wrapper {
+  margin-bottom: 18px;
+}
+
+.filter-text-label {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
 .expense-table{
   width: 100%;
 }
@@ -98,6 +107,12 @@ footer {
 .expense-table th, .expense-table td {
   text-align: left;
 }
+
+.expense-delete-button {
+background-color: red;
+padding: 6px;
+}
+
 .chart-title {
   font-size: 1.8rem;
   font-weight: bold;
