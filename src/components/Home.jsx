@@ -42,7 +42,7 @@ function Home() {
   }, [expenses, filterText]);
 
   return (
-    <div className="home-container">
+    <div>
       <ExpenseForm onAddExpense={handleAddExpense} />
       <TotalSpent expenses={expenses} />
       <CategoryChart expenses={expenses} />

@@ -5,7 +5,11 @@ function Footer() {
     <footer>
       <p>
         Built by{" "}
-        <a href="https://github.com/yungyda" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/yungyda"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Justin Bailey
         </a>{" "}
         — GitHub

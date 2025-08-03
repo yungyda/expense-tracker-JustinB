@@ -28,12 +28,15 @@ function ExpenseList({
             <td>{expense.description}</td>
             <td>
               {expense.amount}
-              {expense.amount > 100 && (
-                <span className="overspent">⚠️ Overspending!</span>
-              )}
+              {expense.amount > 100 && <span>⚠️ Overspending!</span>}
             </td>
             <td>
-              <button className= "expense-delete-button" onClick={() => onDeleteExpense(expense)}>Delete</button>
+              <button
+                className="expense-delete-button"
+                onClick={() => onDeleteExpense(expense)}
+              >
+                Delete
+              </button>
             </td>
           </tr>
         ))}

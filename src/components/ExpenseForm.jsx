@@ -2,13 +2,19 @@ import React, { useState } from "react"; // Import React and useState hook for m
 import Button from "./Button"; // Import reusable Button component (if needed in your app)
 
 // Define the list of categories that can be selected for an expense
-const categories = ["Food", "Utilities", "Entertainment", "Transportation", "Other"];
+const categories = [
+  "Food",
+  "Utilities",
+  "Entertainment",
+  "Transportation",
+  "Other",
+];
 
 function ExpenseForm({ onAddExpense }) {
   // State to manage form data (amount, category, description)
   const [formData, setFormData] = useState({
-    amount: "",      // Amount of the expense
-    category: "",    // Category of the expense (e.g., Food, Utilities)
+    amount: "", // Amount of the expense
+    category: "", // Category of the expense (e.g., Food, Utilities)
     description: "", // Description of the expense
   });
 
@@ -33,39 +39,41 @@ function ExpenseForm({ onAddExpense }) {
     <form onSubmit={handleSubmit} className="expense-form">
       {/* Input for entering the amount of the expense */}
       <input
-        min="0" 
+        min="0"
         type="number"
         name="amount"
         placeholder="Amount"
-        value={formData.amount}  // Bind the amount input to the formData state
-        onChange={handleChange}  // Handle input changes
+        value={formData.amount} // Bind the amount input to the formData state
+        onChange={handleChange} // Handle input changes
         required
       />
-      
+
       {/* Dropdown select for choosing the category of the expense */}
       <select
         name="category"
         value={formData.category} // Bind the category select to the formData state
-        onChange={handleChange}   // Handle category change
+        onChange={handleChange} // Handle category change
         required
       >
-        <option value="">Select Category</option>  {/* Default option */}
+        <option value="">Select Category</option> {/* Default option */}
         {/* Loop through the categories and create an option for each */}
         {categories.map((cat) => (
-          <option key={cat} value={cat}>{cat}</option>
+          <option key={cat} value={cat}>
+            {cat}
+          </option>
         ))}
       </select>
-      
+
       {/* Input for entering a description of the expense */}
       <input
         type="text"
         name="description"
         placeholder="Description"
-        value={formData.description}  // Bind the description input to the formData state
-        onChange={handleChange}       // Handle description input change
+        value={formData.description} // Bind the description input to the formData state
+        onChange={handleChange} // Handle description input change
         required
       />
-      
+
       {/* Submit button to add the expense */}
       <button type="submit">Add Expense</button>
     </form>

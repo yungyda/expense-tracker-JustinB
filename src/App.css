@@ -48,10 +48,7 @@ footer {
   text-align: center;
   padding: 10px;
 }
-.penny-image {
-  width: 50%; /*  image half the size */
-  height: auto; /* Maintains the aspect ratio */
-}
+
 .about-section {
   text-align: center; /* Center-aligns text and image */
   padding: 20px;
@@ -109,8 +106,13 @@ footer {
 }
 
 .expense-delete-button {
-background-color: red;
-padding: 6px;
+  background-color: red;
+  padding: 6px;
+}
+
+.chart-wrapper{
+  width: 400px;
+  height: 400px;
 }
 
 .chart-title {
@@ -146,7 +148,3 @@ padding: 6px;
   color: #27ae60; /* Green color for positive amounts */
 }
 
-/* Add some styles for overspending (highlight in red) */
-.category-item.overspend .category-amount {
-  color: #e74c3c; /* Red color for overspending */
-}

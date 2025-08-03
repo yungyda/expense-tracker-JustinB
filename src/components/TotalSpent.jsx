@@ -5,7 +5,7 @@ function TotalSpent({ expenses }) {
   const total = expenses.reduce((acc, curr) => acc + curr.amount, 0);
 
   return (
-    <div className="total-spent">
+    <div>
       <h2>Total Spent: ${total}</h2>
     </div>
   );
